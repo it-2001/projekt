@@ -1,0 +1,65 @@
+.my-color {
+    color: rgb(105, 206, 231) !important;
+}
+
+.my-color2{
+    color: rgb(255, 0, 0);
+}
+
+.pozor {
+    color: rgb(160, 206, 122) !important;
+}
+
+.my-row {
+    height: 110px !important;
+}
+
+
+.obrazek {
+    float: left;
+    margin-right: 15px;
+}
+
+.obrazek2 {
+    float: right;
+    margin-left: 15px;
+}
+
+.obrazek3{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.obrazek4{
+    margin-left: auto;
+    margin-right: auto;
+    width:50px;
+    height:60px;
+}
+
+.navi {
+    background-color: rgba(156, 119, 119, 0.356);
+}
+
+.navi2{
+    background-color: rgb(156, 119, 119);
+}
+
+th,
+td {
+    padding: 5px 20px;
+}
+
+footer{
+    text-align: center;
+}
+.frame{
+    border: 2px rgb(151, 20, 20) solid;
+    padding: 10px;
+}
+.abs{
+    position: absolute;
+    z-index: 10;
+}
