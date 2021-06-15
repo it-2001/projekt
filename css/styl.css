@@ -63,3 +63,27 @@ footer{
     position: absolute;
     z-index: 10;
 }
+
+
+div.gallery {
+    margin: 0.6em;
+    border: 2px solid black;
+    width: 23%;
+    background-color: #333;
+    color: white;
+}
+  
+div.gallery:hover {
+    border: 2px solid rgb(15, 15, 15);
+}
+  
+div.gallery img {
+    width: 100%;
+    height: auto;
+    border: hidden;
+}
+  
+div.desc {
+    padding: 1em;
+    text-align: center;
+}

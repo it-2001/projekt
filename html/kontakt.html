@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt - Brantice</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/8860977bd2.js" crossorigin="anonymous"></script>
+    <link href="../img/ico.png" rel="icon" type="image/png">
+    <link rel="stylesheet" href="../css/lightbox.min.css">
+    <link href="../css/styl.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <div class="container-fluid text-center my-color navi abs">
+            <div class="row align-items-center my-row">
+                <div class="col">
+                    <h1>Kontaktujte Nás</h1>
+                </div>
+            </div>
+        </div>
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="../img/4.jpg" alt="1">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="../img/5.jpg" alt="2">
+                    <div class="carousel-caption d-none d-md-block">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="../img/6.jpg" alt="3">
+                    <div class="carousel-caption d-none d-md-block">
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+
+    </header>
+    <main class="bg-white">
+
+
+        <nav class="navbar navbar-expand-md navbar-dark sticky-top navi2">
+            <a class="navbar-brand" href="#">
+                <img src="../img/ico.png" alt="Logo" style="width:70px;">
+            </a>
+            <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse"
+                data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="../index.html">Úvod <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="historie.html">Historie</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="galerie.html">Galerie</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="rada.html">Správní rada</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Kontakt<span class="sr-only">(current)</span></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="container text-black">
+            <div class="row">
+                <div class="col-9">
+                    <br>
+                    <h4>Kontaktujte nás</h4>
+                    <div class="container">
+                        <form action="/kontakty?do=form-submit" method="post" id="frm-form" data-validate>
+                            <div class="form-vertical">
+                                <div class="form-item" id="frmform-name-pair">
+                                    <div class="form-item-label"><label class="required" for="frmform-name">Jméno<span
+                                                class="meta"> - povinné</span></label></div>
+                                    <div class="form-item-field"><input type="text" name="name" id="frmform-name"
+                                            value=""> </div>
+                                </div>
+                                <div class="form-item" id="frmform-email-pair">
+                                    <div class="form-item-label"><label class="required" for="frmform-email">E-mail<span
+                                                class="meta"> - povinné</span></label></div>
+                                    <div class="form-item-field"><input type="email" name="email" id="frmform-email"
+                                            value=""> </div>
+                                </div>
+                                <div class="form-item" id="frmform-phone-pair">
+                                    <div class="form-item-label"><label for="frmform-phone">Telefon</label></div>
+                                    <div class="form-item-field"><input type="text" name="phone" id="frmform-phone"
+                                            value=""> </div>
+                                </div>
+                                <div class="form-item" id="frmform-msg-pair">
+                                    <div class="form-item-label"><label class="required" for="frmform-msg">Vaše
+                                            zpráva<span class="meta"> - povinné</span></label></div>
+                                    <div class="form-item-field"><textarea cols="40" rows="10" name="msg"
+                                            id="frmform-msg"></textarea> </div>
+                                </div>
+                                <div class="form-item recaptcha">
+                                    <div class="form-item-label"><label for="frmform-antispam">Prosím potvrďte<span
+                                                class="meta"> - povinné</span></label></div>
+                                    <div data-sitekey="6Ld5hYkUAAAAAFHoB0rCpuV8oevVjvOmsVeb0lWR"
+                                        class="g-recaptcha form-item-field"></div>
+                                </div>
+                                <div class="form-item buttons">
+                                    <div class="form-item-label"></div>
+                                    <div class="form-item-field"><input type="submit" class="action-button" name="send"
+                                            id="frmform-send" value="Odeslat"> </div>
+                                </div>
+                            </div>
+                            <div style="display: none;"><label class="required" for="frmform-www">Nechte prosím toto
+                                    pole prázdné, používá se pro ochranu proti spamu.<span class="meta"> -
+                                        povinné</span></label><input type="text" name="www" id="frmform-www" value="">
+                            </div>
+                            <div><input type="hidden" name="www_timestamp" id="frmform-www_timestamp"
+                                    value="1623779666"></div>
+                        <br> <br> <br>
+                        <h4>Čas na všemi oblíbený kvíz :)</h4>
+                        </form>
+                        <form action="" method="POST">
+                            <!-- Formulářový prvek input-text -->
+                            <p class="alert alert-warning otazka">Jmenujte hlavní osídlence v době 15. 17. stol.</p>
+                            <div class="form-group row">
+                                <label for="listina" class="col-sm-3 col-form-label">Osídlenci</label>
+                                <div class="col-sm-9">
+                                    <input type="text" class="form-control" name="listina" id="listina" placeholder="Slováci">
+                                </div>
+                            </div>
+                            <p class="alert alert-success odpoved collapse">Němci</p>
+                            <hr>
+                            <!-- Formulářový prvek input-number -->
+                            <p class="alert alert-warning otazka">Z jakého roku byla nejstarší písemná známka o obci?</p>
+                            <div class="form-group row">
+                                <label for="univerzita" class="col-sm-3 col-form-label">1. písemná známka</label>
+                                <div class="col-sm-3">
+                                    <input type="number" class="form-control" name="univerzita" min="1000" max="2021" id="univerzita" value="1800">
+                                </div>
+                            </div>
+                            <p class="alert alert-success odpoved collapse">1222</p>
+                            <hr>
+                            <!-- Formulářový prvek select -->
+                            <p class="alert alert-warning otazka">Co je hlavním "tahákem" návštěvníků brantic?</p>
+                            <div class="form-group row">
+                                <label for="kral" class="col-sm-3 col-form-label">Vyberte odpověď</label>
+                                <div class="col-sm-3">
+                                      <select class="form-control" name="kral" id="kral">
+                                        <option>Příroda</option>
+                                        <option>Kultura</option>
+                                        <option selected>Atmosféra</option>
+                                        <option>Místní kuchině</option>
+                                      </select>
+                                </div>
+                            </div>
+                            <p class="alert alert-success odpoved collapse">Přemysl Otakar II.</p>
+                            <hr>            
+                            <div class="form-group row">
+                                <div class="offset-sm-2 col-sm-10">
+                                    <button type="button" class="btn btn-primary" data-toggle="collapse" data-target=".odpoved">Vyhodnotit kvíz</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <br>
+                    <br>
+                    <br>
+                </div>
+
+                <div class="col">
+                    <div class="card my-3">
+                        <h5 class="card-header pozor">Budoucí obsah</h5>
+                        <div class="card-body">
+                            <p class="pozor"> <b>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores
+                                    perspiciatis totam accusantium vitae sint iure deleniti maxime voluptate, labore
+                                    nisi nemo culpa consectetur ut possimus veniam architecto explicabo harum doloribus,
+                                    numquam illo quisquam? Iusto itaque molestias necessitatibus ab aut ullam autem!
+                                    Deserunt consectetur minus dolore perspiciatis incidunt dolor tenetur ullam!</b>
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col">
+                    <hr>
+                    <p>Daniel Antoš IT1 2021</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="../js/lightbox.min.js"></script>
+    <script src="../js/lightbox-plus-jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+
+</html>
